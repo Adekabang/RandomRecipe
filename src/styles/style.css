@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@700&family=Roboto+Slab&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   width: 100vw;
 }
 
@@ -19,11 +19,19 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Mina', sans-serif;
+  font-family: "Mina", sans-serif;
 }
 
 h1 {
   font-size: 96px;
+}
+
+h2 {
+  font-size: 72px;
+}
+
+h3 {
+  font-size: 48px;
 }
 
 #main-text {
@@ -31,7 +39,7 @@ h1 {
 }
 
 .btn-primary {
-  background-color: #FF6363;
+  background-color: #ff6363;
   border: none;
   color: white;
   padding: 10px 30px;
@@ -41,7 +49,7 @@ h1 {
   display: inline-block;
   font-size: 16px;
   border-radius: 100px;
-  font-family: 'Mina', sans-serif;
+  font-family: "Mina", sans-serif;
 }
 
 .btn-primary:hover {
@@ -59,11 +67,23 @@ h1 {
 .center-parent {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
-.center-child {
-  margin: 0
+.end-parent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.start-parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-child {
+  margin: 0;
 }
 
 .text-center {
@@ -74,10 +94,14 @@ h1 {
   text-align: left;
 }
 
+.img-right {
+  align-items: flex-end;
+}
+
 .bg-circle {
   position: absolute;
   z-index: -10;
-  background-color: #FFF48E;
+  background-color: #fff48e;
   height: 65vw;
   width: 100vw;
   border-radius: 50%;
@@ -91,4 +115,57 @@ h1 {
 
 recipe-item {
   display: block;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+.column-30 {
+  flex: 30%;
+  padding: 10px;
+}
+
+.column-70 {
+  flex: 70%;
+  padding: 10px;
+}
+
+.img-thumb {
+  width: 70%;
+}
+
+.tags {
+  background: rgba(196, 196, 196, 0.6);
+  border: none;
+  color: black;
+  padding: 5px 30px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 10px;
+  font-family: "Mina", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  font-size: 16px;
+}
+ul li::before {
+  content: "\2022";
+  color: #ff6363;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }

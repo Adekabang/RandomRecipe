@@ -8,7 +8,6 @@ const main = () => {
   const loading = document.querySelector(".loading");
   const recipe = document.querySelector("#recipe");
   const baseUrl = "https://www.themealdb.com/api/json/v1/1/random.php";
-  const imageUrl = "https://www.themealdb.com/images/ingredients/";
 
   randomBtn.addEventListener("click", () => {
     mainText.innerHTML = "Please Wait";
