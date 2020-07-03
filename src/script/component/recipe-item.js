@@ -43,7 +43,7 @@ class RecipeItem extends HTMLElement {
         <br>
     <div class="row">
       <div class="column-30 start-parent">
-        <img class="img-thumb flex-child" src="https://www.themealdb.com/images/ingredients/${
+        <img class="img-thumb flex-child img-ingredient" src="https://www.themealdb.com/images/ingredients/${
           this._recipe.strIngredient1
         }.png" alt="">
       </div>

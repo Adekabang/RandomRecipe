@@ -119,20 +119,22 @@ recipe-item {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .column {
-  flex: 50%;
+  min-width: 300px;
+  width: 50%;
   padding: 10px;
 }
 
 .column-30 {
-  flex: 30%;
+  width: 30%;
   padding: 10px;
 }
 
 .column-70 {
-  flex: 70%;
+  width: 70%;
   padding: 10px;
 }
 
@@ -157,9 +159,11 @@ recipe-item {
 ul {
   list-style: none;
 }
+
 ul li {
   font-size: 16px;
 }
+
 ul li::before {
   content: "\2022";
   color: #ff6363;
@@ -169,6 +173,42 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
+
 .mb-5 {
   margin-bottom: 50px;
+}
+
+@media all and (max-width: 420px) and (min-width: 320px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .img-ingredient {
+    display: none;
+  }
+  .column-30 {
+    flex: 10%;
+    padding: 10px;
+  }
+
+  .column-70 {
+    flex: 90%;
+    padding: 10px;
+  }
+  .row {
+    align-items: center;
+    justify-content: center;
+  }
+  .column {
+    align-items: center;
+    justify-content: center;
+  }
 }
