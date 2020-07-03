@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
-    "build" : "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }
