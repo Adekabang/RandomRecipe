@@ -23,8 +23,6 @@ class RecipeItem extends HTMLElement {
         );
       }
     }
-    console.log(this._recipe);
-    console.log(result);
     this.innerHTML = `
     <div class="row">
       <div class="column center-parent">
