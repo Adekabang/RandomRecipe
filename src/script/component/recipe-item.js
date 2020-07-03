@@ -5,6 +5,11 @@ class RecipeItem extends HTMLElement {
   }
 
   render() {
+    let result = this._recipe.strInstructions.replace(
+      /(?:\r\n)/g,
+      "</p><br><p>"
+    );
+
     let ingredientArr = [];
     for (var i = 1; i <= 20; i++) {
       if (
@@ -19,7 +24,7 @@ class RecipeItem extends HTMLElement {
       }
     }
     console.log(this._recipe);
-    console.log(ingredientArr);
+    console.log(result);
     this.innerHTML = `
     <div class="row">
       <div class="column center-parent">
@@ -50,6 +55,11 @@ class RecipeItem extends HTMLElement {
         </ul>
       </div>
       </div>
+    </div>
+        <br>
+    <div class="mb-5">
+        <h3>Instructions</h3>
+        <p>${result}</p>
     </div>
       `;
   }
