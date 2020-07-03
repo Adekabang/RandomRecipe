@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  width: 100vw;
+}
+
+.full-height{
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Mina', sans-serif;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+#main-text {
+  max-width: 700px;
+}
+
+.btn-primary {
+  background-color: #FF6363;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 100px;
+  font-family: 'Mina', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #ff4242;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.center-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.center-child {
+  margin: 0
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-circle {
+  position: absolute;
+  z-index: -10;
+  background-color: #FFF48E;
+  height: 65vw;
+  width: 100vw;
+  border-radius: 50%;
+  top: 0px;
+  transform: translateY(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+recipe-item{
+  display: block;
+}
