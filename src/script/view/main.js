@@ -43,6 +43,7 @@ const main = () => {
     randomBtn.classList.remove("hidden")
     loading.classList.add("hidden")
 
+    recipe.innerHTML = ""
     const recipeItem = document.createElement("recipe-item");
     recipeItem.recipe = result
     recipe.appendChild(recipeItem);
